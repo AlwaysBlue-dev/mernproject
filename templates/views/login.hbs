@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+   {{>header}}
+   
+</head>
+<body>
+    {{>navbar}}
+    
+    <div class="container" id="container">
+	<div class="form-container sign-in-container">
+		<form class="myform" action="/login" method="POST">
+			<h1 class="text">Sign in</h1>
+			<input class="userinput" type="email" placeholder="Email" autocomplete="off" name="email" />
+			<input class="userinput" type="password" placeholder="Password" autocomplete="off" name="password" />
+			<button class="btn" type="submit">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-right">
+				<h1 class="text">Hello, Friend!</h1>
+				<p class="rightside">Enter your personal details and start journey with us</p>
+				<a href="/register"><button class="btn ghost"  id="signUp">Sign Up</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

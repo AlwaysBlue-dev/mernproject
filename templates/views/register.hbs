@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+   {{>header}}
+
+</head>
+<body>
+    {{>navbar}}
+   <div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Registration Form</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form action="/register" method="POST">
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input type="email" name="email" placeholder="Email" autocomplete="off" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder="Password" autocomplete="off" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="confirmpassword" placeholder="Confirm Password" autocomplete="off" required />
+          </div>
+          <div class="row clearfix">
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="firstname" placeholder="First Name" autocomplete="off" />
+              </div>
+            </div>
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="lastname" placeholder="Last Name" autocomplete="off" required />
+              </div>
+            </div>
+          </div>
+            	<div class="input_field radio_option">
+              <input type="radio" name="gender" value="male" id="rd1" >
+              <label for="rd1">Male</label>
+              <input type="radio" name="gender" value="female" id="rd2" >
+              <label for="rd2">Female</label>
+              </div>
+          <input class="button" type="submit" value="Register" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
